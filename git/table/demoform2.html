@@ -1,0 +1,240 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Survey</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            padding-left: 10px;
+            color: #333;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        button {
+            margin-bottom: 10px;
+        }
+
+        .age {
+            cursor: pointer;
+            display: grid;
+            padding: 10px;
+        }
+
+        .age:active {
+            background-color: rgb(238, 230, 144);
+        }
+
+        /* salary */
+        .salary {
+            display: grid;
+            padding: 10px;
+        }
+
+        .salary:active {
+            background-color: rgb(238, 230, 144);
+        }
+
+        .gender:active {
+            background-color: rgb(238, 230, 144);
+        }
+
+        .gender-other p {
+            font-size: 10px;
+            display: none;
+        }
+
+        .gender-other:active p {
+            display: block;
+        }
+
+        .prod .gender .time .newProd .features {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prod:active {
+            background-color: rgb(238, 230, 144);
+
+        }
+
+        .time:active {
+            background-color: rgb(238, 230, 144);
+        }
+
+        .newProd:active {
+            background-color: rgb(238, 230, 144);
+        }
+
+        .features:active {
+            background-color: rgb(238, 230, 144);
+        }
+
+
+        .table2-agree {
+            padding: 10px;
+            cursor: pointer;
+
+            table,
+            th,
+            td {
+                font-size: 20px;
+                text-align: center;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            th {
+                background-color: rgb(223, 218, 218);
+            }
+
+
+            tr:hover {
+                background-color: rgb(238, 230, 144);
+            }
+
+        }
+
+        .end {
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <hr>
+    <!-- age -->
+    <div class="age">
+        <h6>What is your age range?</h6>
+        <select name="age" id="age">
+            <option value="18-24" size="3">18 - 24</option>
+            <option value="25-34">25 - 34</option>
+            <option value="35-50">35 - 50</option>
+            <option value="50+">50+</option>
+        </select>
+    </div>
+    <br>
+
+    <!-- salary -->
+    <div class="salary">
+        <h6>What is your yearly income range?</h6>
+        <select name="salary" id="salary">
+            <option value="0-25000">$0 - $25,000</option>
+            <option value="25001-50000">$25,001 - 50,000</option>
+            <option value="50001-100000">$50,001 - $100,000</option>
+            <option value="100k+">$100,000+</option>
+        </select>
+    </div>
+    <br>
+    <!-- Gender -->
+    <div class="Gender">
+        <h6>Gender Identity</h6>
+        <!-- <form action=""> -->
+        <input type="radio" name="Gender" id="Male"> <span>Male</span><br>
+        <input type="radio" name="Gender" id="Female"> <span>Female</span><br>
+        <input type="radio" name="Gender" id="Nonbinary"> <span>Nonbinary</span><br>
+        <div class="gender-other">
+            <input type="radio" name="Gender" id="Other"> <span>Other</span><br>
+            <input type="text" name="Other" id="Other">
+            <br><br>
+            <p>Maximum of 250 characters. Currently Used: 0 characters</p>
+        </div>
+        <!-- </form> -->
+    </div>
+    <br>
+
+    <div class="Prod">
+        <h6>
+            Which of the following products have your purchased in the last 2 months.
+            Please check all that apply.
+        </h6>
+        <input type="checkbox" name="Prod" id="Prod1"> <span>Product 1</span><br>
+        <input type="checkbox" name="Prod" id="Prod1"> <span>Product 2</span><br>
+        <input type="checkbox" name="Prod" id="Prod3"> <span>Product 3</span><br>
+    </div>
+    <br>
+
+    <div class="time">
+        <h6>How often would you use our new product?</h6>
+        <input type="radio" name="time" id="Daily"> <span>Daily</span><br>
+        <input type="radio" name="time" id="Weekly"> <span>Weekly</span><br>
+        <input type="radio" name="time" id="Monthly"> <span>Monthly</span><br>
+    </div>
+    <br>
+    <div class="newProd">
+        <h6>How often would you use our new product?</h6>
+        <table>
+            <tr>
+                <th>$</th>
+                <th><input type="text" size="2"></th>
+                <th>.</th>
+                <th><input type="text" size="1"></th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Dollars</td>
+                <td></td>
+                <td>Cents</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <!-- comment -->
+    <div class="features">
+        <h6>What features would you like to see in the new product.</h6>
+        <textarea name="features" id="features" cols="20" rows="5"></textarea>
+    </div><br>
+
+    <p>Please rate your level of agreement with the following statements.</p>
+    <!-- Table2 -->
+    <div>
+        <table class="table2-agree">
+            <tr>
+                <th></th>
+                <th>Strongly Disagree</th>
+                <th>Disagree</th>
+                <th>Agree</th>
+                <th>Strongly Agree</th>
+            </tr>
+
+            <tr>
+                <td>Our products are priced fairly.</td>
+                <td>1 <input type="radio" name="table2" id="StrDisagree"></td>
+                <td>2 <input type="radio" name="table2" id="Disagree"></td>
+                <td>3 <input type="radio" name="table2" id="Agree"></td>
+                <td>4 <input type="radio" name="table2" id="StrAgree"></td>
+            </tr>
+
+            <tr>
+                <td>Our products are high quality.</td>
+                <td>1 <input type="radio" name="table2" id="StrDisagree"></td>
+                <td>2 <input type="radio" name="table2" id="Disagree"></td>
+                <td>3 <input type="radio" name="table2" id="Agree"></td>
+                <td>4 <input type="radio" name="table2" id="StrAgree"></td>
+            </tr>
+
+            <tr>
+                <td>You would recommend our product to a friend or coworker.</td>
+                <td>1 <input type="radio" name="table2" id="StrDisagree"></td>
+                <td>2 <input type="radio" name="table2" id="Disagree"></td>
+                <td>3 <input type="radio" name="table2" id="Agree"></td>
+                <td>4 <input type="radio" name="table2" id="StrAgree"></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary">Submit</button>
+    <br><br>
+</body>
+</body>
+
+</html>
