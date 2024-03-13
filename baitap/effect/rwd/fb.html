@@ -4,21 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/fb.css">
 </head>
-<body>
-    <div class="header col-12 col-sm-12 col-md-12" style="background-color: rgb(20, 133, 96);">
-        <div class="logo"></div>
-        <div class="search-bar"></div>
-        <div class="right"></div>-menu
-    </div>
-
-    <div class="left-sb col-md-3" style="background-color: rgb(0, 55, 255);">
+<style>
+    * {
+        box-sizing: border-box;
+        text-wrap: nowrap;
+    }
+    .head {
+        width: 100%;
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .head .header-left {
+        position: absolute;
+        left: 0px;
+    }
+    .head .header-right {
+        position: absolute;
+        right: 0px;
+    }
+    ul {
+        margin: 10px 0px 0px 0px;
+        padding: 0px;
+    }
+    ul li {
+        display: inline;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 20px;
         
+        border-bottom: 4px solid transparent;
+        
+    }
+    ul li:hover {
+        border-bottom: 4px solid blue;
+    }
+    .left {
+        width: 30%;
+    }
+    .left div div {
+        display: flex;
+    }
+    .left div div p {
+        margin: 0px 0px 0px 20px;
+    }
+    .main {
+        width: 60%;
+        background-color: gray;
+    }
+</style>
+<body>
+    <div class="head">
+        <div class="header-left">
+            <img src="" alt="logo" class="logo">
+            <input type="text">
+        </div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <div class="header-right">
+            <img src="" alt="app1">
+            <img src="" alt="mess">
+            <img src="" alt="noti">
+            <img src="" alt="set">
+        </div>
     </div>
-    <div class="main-content col-12 col-sm-8 col-md-6" style="background-color: rgb(127, 144, 255);">
+    <div class="left">
+        <div style="border-bottom: 1px solid gray;">
+            <div>
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sendible.com%2Finsights%2Fsocial-media-icons&psig=AOvVaw1L-gGVXCTNFHJ0wvCA-4A8&ust=1710422004636000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLDYnIWo8YQDFQAAAAAdAAAAABAE" alt="ava"> <p>HV Minh Hùng</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Tim ban be</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Kỉ niệm</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Đã lưu</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Nhóm</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Video</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Marketplace</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Bảng feed</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Chiến dịch gây quỹ</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Chơi game</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Đơn đặt hàng và thanh toán</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Hiến máu</p>
+                
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Messenger</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Trang</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Hẹn hò</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Sự kiện</p>
+            </div>
+            <div>
+                <img src="" alt="ava"> <p>Xem thêm</p>
+            </div>
+        </div>
+        
+        <div>
+            <p>Trang của bạn</p>
+            <div>
+                <img src="" alt="ava"> <p>Hẹn hò 4 phương</p>
+            </div>
+        </div>
     </div>
-    <div class="right-sb col-12 col-sm-4 col-md-3" style="background-color: rgb(67, 97, 87);">
-    </div>
+    <div class="main">123</div>
+    <div class="right">456</div>
+    <div class="footer"></div>
 </body>
 </html>
