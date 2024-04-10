@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-rows: 50px 300px 500px 200px;
+    grid-template-areas:
+        "nav nav nav nav"
+        "main main main main"
+        "about about about sidebar"
+        "contact contact contact sidebar"
+        "footer footer footer footer";
+    gap: 5px;
+    font-weight: 800;
+    font-size: 12px;
+    color: #004d40;
+    text-align: center;
+    }
+    .nav {
+        background-color: blue;
+        grid-area: >nav;
+    }
+    main h2 {
+    font-weight: bolder;
+}
+main p {
+    text-align: left;
+}
+
+biểu định kiểu tác nhân người dùng
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+biểu định kiểu tác nhân người dùng
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+    .p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    }
+</style>
+<body>
+    <div class="container">     
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>  
+        </nav>
+        <main><h2>A Demo Site CSS Grid</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque pariatur possimus alias quod ratione incidunt dicta assumenda repudiandae optio eveniet, quisquam fuga! Nam eaque fuga similique quia, esse non libero?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo libero doloremque, eum quis laudantium hic iste ab sed ipsum veniam, quam dolor rem cupiditate corrupti aliquam repudiandae officia soluta impedit!</p>
+        </main>
+        <div class="sidebar img"><h2>Find Me on Social Media</h2>
+          <p><a href="#">Facebook</a></p>
+        </div>
+        <div class="about"><h2>About </h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptatem reprehenderit non. Magni sit alias quia, vel quidem autem quos optio quam at porro aliquid necessitatibus aut et eos nulla.</p>
+        </div>
+        <div class="contact"><h2>Contact</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi consequuntur magnam ipsum, commodi quam, non dolorem numquam veritatis, qui nam voluptas asperiores neque magni. Placeat, natus reprehenderit. Fugit, voluptatum commodi.</p>
+      </div>
+      <footer>Copỷight 2021 <a href="#">BW2109R1</a></footer>
+      </div>
+</body>
+</html>
